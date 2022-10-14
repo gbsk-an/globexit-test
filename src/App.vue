@@ -31,7 +31,7 @@ export default {
     methods: {
         async fetchTasks() {
         try {
-          const response = await axios.get('http://localhost:3000');
+          const response = await axios.get('http://127.0.0.1:3000'); //I used http://localhost:3000
           this.users = response.data;
         } catch (e) {
           alert('Error')
